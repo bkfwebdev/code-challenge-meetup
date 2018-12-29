@@ -1,0 +1,347 @@
+<html>
+<head>
+    <style>
+        body { background: #fff; padding: 20px; }
+        .global header { font-family: sans-serif; }
+        .your-answer { border: 2px inset; background-color: #eee; padding: 5px; font-family: sans-serif; }
+
+        /* CSS / HTML Question #2 */
+        .q2 {
+            border-color: black;
+            border-width: 0px 5px;
+            border-style:solid;
+            background-color: lightsteelblue;
+            padding-left: 5px;
+        }
+
+        /* CSS / HTML Question #3 */
+        .comcast {
+            color: red;
+        }
+        .nbc {
+            color: green;
+        }
+
+        /* CSS Question #4 */
+        .box1 {
+            background-color: green;
+            width: 200px;
+        }
+        .box2 {
+            background-color: grey;
+            width: 200px;
+        }
+        .box3 {
+            background-color: aqua;
+            width: 200px;
+        }
+    </style>
+    <script>
+        var selectedElement = document.getElementsByClassName("blue")
+        console.log(selectedElement);
+        selectedElement[0].style.color = "darkblue";
+       
+    </script>
+ 
+</head>
+<body>
+    <div class="global">
+        <header>
+            <h1>Welcome to Comcast Interactive Media's Pre-Interview Questionnaire!</h1>
+            <p>
+              Interviewing candidates takes a lot of time, and time is valuable for all of us.
+              If you are as serious about working for Comcast as we are about working with great people,
+              please take the time to fill out this questionnaire. We devised these questions as a test of
+              skills we consider primary and fundamental. If you find yourself taking much more than
+              the suggested completion time to answer the questions, then Comcast might not be a good
+              fit at this time. The in-person interview questions will be more difficult, and hopefully
+              a better test of your programming skills.
+            </p>
+
+            <h2>Instructions:</h2>
+            <b>-</b> Read and work on the problems in a text/html editor. It will make a lot more sense that way.<br/>
+            <b>-</b> Do not use any Javascript or CSS frameworks.<br/>
+            <b>-</b> Work on this alone. Feel free to use google or any reference material you have.<br/>
+            <b>-</b> If you can't solve a problem, comment on it.<br/><br/>
+        </header>
+
+        <hr>
+        <div>
+            <h1>Ranking Question:</h1>
+            <div>Rate yourself on the following technologies on a scale of 1-10. You may be asked to justify these answers in an interview.</div>
+            <div>
+                1 - Beginner (I don't really know that)<br/>
+                4 - Intermediate (I can work without help)<br/>
+                6 - Advanced (People come to me for help in esoteric or hard problems)<br/>
+                8 - Industry Expert (People outside my office see me as an expert)<br/>
+                10 - Spec/Language Author or Primary Contributor.
+            </div>
+            <br/>
+            Angular <div class="your-answer"><!-- Bryant K. Feld (4) --></div>
+            Polymer <div class="your-answer"><!-- Bryant K. Feld (4) --></div>
+            React <div class="your-answer"><!-- Bryant K. Feld (4) --></div>
+            Vue <div class="your-answer"><!-- Bryant K. Feld (1) --></div>
+            Redux <div class="your-answer"><!-- Bryant K. Feld (1) --></div>
+            JavaScript (vanilla DOM) <div class="your-answer"><!-- Bryant K. Feld (4) --></div>
+            JavaScript (scripting) <div class="your-answer"><!-- Bryant K. Feld (4) --></div>
+            HTML <div class="your-answer"><!-- Bryant K. Feld (4) --></div>
+            CSS <div class="your-answer"><!-- Bryant K. Feld (4) --></div>
+            Build Tools <div class="your-answer"><!-- Bryant K. Feld (4) --></div>
+            SVN/Git <div class="your-answer"><!-- Bryant K. Feld (4) --></div>
+            Server-side Languages (Go, Java, Perl..) <div class="your-answer"><!-- Bryant K. Feld (4) node, please list languages --></div>
+        </div>
+
+        <section>
+          <h1>CSS / HTML Portion</h1>
+          <p>
+            The CSS / HTML portion of the test should be completed within 30 minutes.
+          </p>
+
+          <hr>
+          <div>
+              <h1>Question 1:</h1>
+              <div>This HTML isn't perfect. Go through the markup and list your top 5 issues in the div below,
+                provide more for bonus points (non-redeemable).
+              </div>
+              <div class="your-answer"><!-- replace this comment with your answer --></div>
+          </div>
+
+          <hr>
+          <div>
+              <style>
+                  #question2 {
+                      border-style:solid;
+                      border-width:1 px;
+                      border-color: red;
+                      padding: 10px;
+                  }
+                </style>
+              <h1>Question 2:</h1>
+              <div id="question2">
+                  <div class="q2">
+                      Style the div with an id of "question2" as follows:<br/>
+                      1) Only style div#question2. The styles for div.q2 should not be modified.<br/>
+                      2) Add a 1 pixel red border to the div#question2<br/>
+                      3) Add space such that the red border is visually rendered 10px away from the blue pixels on each side.<br/>
+                  </div>
+              </div>
+          </div>
+
+          <hr>
+
+          <div>
+              <h1>Question 3:</h1>
+              <div>The below content has some web accessibility issues. Rewrite the content and markup
+                in the div#accessibility as you see fit to make it more accessible. Please explain your decisions below.</div>
+                <div id="accessibility">
+                    <span>Opportunities at Comcast Corportation include</span>
+                    <p>
+                        <span class="comcast">* Comcast</span><br/>
+                        <span class="nbc">* NBCUniversal</span><br/>
+                        <span class="nbc">* NBCUniversal International</span><br/>
+                        <span class="nbc">* Parks &amp; Resorts</span><br/>
+                        <span class="comcast">* Comcast Spectacor</span><br/>
+                        <span class="comcast">* Comcast Ventures</span>
+                    </p>
+                    <p><span class="comcast">Red text is Comcast,</span> <span class="nbc">Green text is NBC.</span></p>
+                    <p><a href="http://comcastcorporation.com" target="_blank">Click here</a> to learn more about <img src="data:image/png;base64,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"/></p>
+                </div>
+                <div class="your-answer"><!-- I am not familiar with concepts around coding for accessibility but I am eager to learn --></div>
+          </div>
+
+          <hr>
+       <style>
+        .box1 {float:left}
+        .box2 {float:right}
+        .box3 {margin-left: auto;
+        margin-right: auto; }       
+        @media screen and (max-width: 800px) {
+        .box3 {display: none;}
+        }
+       </style>
+
+          <div>
+              <h1>Question 4:</h1>
+              <div>
+                  <div class="box1">This box should be on the left side of the page</div>
+                  <div class="box2">This box should be on the right side of the page</div>
+                  <div class="box3">This box should be at the center of the page and should disappear if the page is less than 800px.</div>
+                  <br/>
+              </div>
+          </div>
+        </section>
+
+        <section>
+          <h1>JavaScript Portion</h1>
+          <p>
+            The JavaScript portion of the test should be completed within 30 minutes.
+          </p>
+
+          <hr>
+          <div>
+              <h1>Question 1:</h1>
+              <div>
+                  <span class="blue">This text should be dark blue.</span><br/>
+                  1. Explain why the JavaScript code in the &lt;head&gt; element is failing to achieve this.<br/>
+                  2. Edit the JavaScript code to achieve this, leaving it in the &lt;head&gt;.
+              </div>
+              <div class="your-answer"><!-- the javascript was not using the correct selector method --></div>
+          </div>
+
+          <hr>
+          <div>
+              <h1>Question 2:</h1>
+              <script>
+                  var x = [];
+                  x[0] = 'a';
+                  x[1] = 'b';
+                  x[2] = 'c';
+                  var y = x.pop();
+              </script>
+              <div>
+                  1. Explain why the above throws an error.<br/>
+                  2. Fix the code so the last line works.
+              </div>
+              <div class="your-answer"><!-- x is initially defined as an object, it should be defined as an array--></div>
+          </div>
+
+          <hr>
+
+          <div>
+              <h1>Question 3:</h1>
+              <div>Complete the 'increment' function below so that all of the console.log statements return true. </div>
+              <script>
+                  var obj = {
+                      value: 1,
+                      increment: function() {
+                          this.value = this.value + 1
+                        return (this.value)
+
+                      }
+                  }
+                  console.log (obj.increment() == 2);
+                  console.log (obj.increment() == 3);
+                  console.log (obj.increment() == 4);
+              </script>
+          </div>
+
+          <hr>
+
+          <div>
+              <h1>Question 4:</h1>
+              <div>In Javascript, programatically list all of the prime numbers from 1 to 100.</div>
+              <script>
+                  // your code answer goes here
+              </script>
+              <div id="prime" class="your-answer"><!-- your code should output the prime numbers here --></div>
+          </div>
+
+          <hr>
+
+          <div>
+              <h1>Question 5:</h1>
+              <div>Create a function that takes an array and returns a new array
+                   with numbers that are multiples of X removed</div>
+              <script>
+                var myArray = [1,2,3,5,9,15,16,21,23,25];
+
+                function removeMultiples(ary, num) {
+                  //Your answer goes in here
+                }
+
+                //removeMultiples(myArray, 3) => [1,2,5,16,23,25]
+                //removeMultiples(myArray, 5) => [1,2,3,9,16,21,23]
+              </script>
+          </div>
+
+          <hr>
+
+          <div>
+              <h1>Bonus Question:</h1>
+              <div>Use the addTwoNumbers function to create a new function which adds a number to X</div>
+              <script>
+                function addTwoNumbers(num1, num2) {
+                  return num1 + num2;
+                }
+
+                //var addToFive = ???
+                //addToFive(10) => 15;
+                //addToFive(15) => 20;
+
+                //var addToTwenty = ???;
+                //addToTwenty(4) => 24;
+                //addToTwenty(18) => 38;
+              </script>
+          </div>
+
+        </section>
+
+
+        <section>
+          <h1>DevOps Portion</h1>
+          <p>
+            The DevOps portion of the test should be completed within 30 minutes.
+          </p>
+
+          <hr>
+          <div>
+              <h1>Question 1:</h1>
+              <div>How do you use source control to manage releases? How would
+                you handle an emergency release?<div>
+              <div class="your-answer"><!-- in my experience each team or team member works on their portion of the project, pushing changes to their branch
+                                            once you have met all the parameters for your feature/section the project manager will merge your code into the main branch --></div>
+          </div>
+
+          <hr>
+
+          <div>
+              <h1>Question 2:</h1>
+              <div>List the testing frameworks you have written tests in:<div>
+              <div class="your-answer"><!-- although I have been exposed to test runners, I need more experience to be proficient --></div>
+              <div>List the test runners you have configured and used:<div>
+              <div class="your-answer"><!-- I need more experience in this area --></div>
+              <div>What is an acceptable level of test coverage and why?<div>
+              <div class="your-answer"><!-- I need more experience in this area --></div>
+          </div>
+          <hr>
+
+          <div>
+              <h1>Question 3:</h1>
+              <div>As a web engineer, describe three performance concerns you
+                  need to deal with and how you address them.<div>
+              <div class="your-answer"><!-- the size of client size assets/ minify assets whenver possible --></div>
+              <div class="your-answer"><!-- time it takes before page is functionally interactive/employ progressive enhancement or graceful degredation whenever possible --></div>
+              <div class="your-answer"><!-- responsiveness/ use css and media quesries to account for diffrent devices and screen sizes --></div>
+          </div>
+
+        </section>
+
+        <section>
+          <h1>Personal Development</h1>
+          <hr>
+          <div>
+              <h1>Question 1:</h1>
+              <div>Share something you've learned in the past month.<div>
+              <div class="your-answer"><!-- currently I am taking a masterig node course and I am also trying to refgactor some of my old projects from vanilla javascript
+                          to react in order to deepen my knowledge and skill with react --></div>
+          </div>
+          <hr>
+
+          <div>
+              <h1>Question 2:</h1>
+              <div>What is an area of software development that you want to grow in?<div>
+              <div class="your-answer"><!-- I consider myself to be an intermediate level front end developer, I aspire to be a full stack javascript developer --></div>
+          </div>
+        </section>
+
+
+        <hr>
+        <header>
+          Thank you for completing this questionnaire. We'll take a look at what you
+          submitted and get back to you soon.
+          <div>If you have any comments or suggestions please let us know below.</div>
+          <div><!-- replace this comment with your additional comments --></div>
+        </header>
+    <div>
+</body>
+</html>
